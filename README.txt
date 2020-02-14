@@ -1,6 +1,7 @@
 Name: John Joseph Salazar
 Course: CPSC 599 - Mixed Reality Apllications
 Instructor: Terrance Mok
+Demo: https://streamable.com/bnec8
 
 Instructions:
 
