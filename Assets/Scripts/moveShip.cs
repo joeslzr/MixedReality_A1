@@ -14,7 +14,7 @@ public class moveShip : MonoBehaviour
     bool move3 = false;
     bool turn1 = false;
     bool turn2 = false;
-    bool imgfound = false;
+    public static bool imgFound = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class moveShip : MonoBehaviour
     void Update()
     {
 
-        if(imgfound){
+        if(Time.time > 5){
 
             if(!move1){
                 
