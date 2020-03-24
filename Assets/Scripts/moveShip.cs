@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,17 +16,38 @@ public class moveShip : MonoBehaviour
     bool turn2 = false;
     public static bool imgFound = false;
 
+    float xRot;
+    float zRot;
+
+    Vector3 imgV;
+
+    public GameObject img;
+
     // Start is called before the first frame update
     void Start()
     {
         thisTransform = GetComponent<Transform>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        img = GameObject.FindGameObjectWithTag("image");
+        xRot = img.transform.rotation.x*100;
+        zRot = img.transform.rotation.z*100;
 
-        if(Time.time > 5){
+        
+         
+        
+        if(Time.time > 5  
+            && xRot < 20 
+            && xRot > -20
+            && zRot < 20
+            && zRot > -20){
+
+            print("x= " + xRot );
+            print("z= " + zRot );
 
             if(!move1){
                 
